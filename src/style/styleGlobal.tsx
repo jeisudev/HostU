@@ -31,5 +31,7 @@ export const GlobalStyle = createGlobalStyle`
     border: 0;
     box-sizing: border-box;
     font-family: sans-serif, helvetica;
+    list-style: none;
+    text-decoration: none;
 }
 `;

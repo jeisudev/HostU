@@ -1,7 +1,8 @@
 import {MainNav, LinkComponent, DivLocation, DivActive} from './style';
 import {House, MagnifyingGlass, ShoppingBag, Phone, List} from "phosphor-react";
 import {LogoImg} from '../LogoImg/index';
-import {MenuActive} from '../ActiveMenu/index'
+import {MenuActive} from '../ActiveMenu/index';
+import { Link } from "react-router-dom";
 import { useState } from 'react';
 
 export function MenuSite(){
@@ -18,20 +19,20 @@ export function MenuSite(){
                     </DivActive>
                 <LinkComponent >
                     <House  weight="thin" />
-                    <span>Inicio</span>
+                    <Link to="/">inicio</Link>
                 </LinkComponent>
                 <LinkComponent>
                     <MagnifyingGlass  weight="thin" />
-                    <span>Sobre</span>
+                    <Link to="sobre">Sobre</Link>
                 </LinkComponent>
                 <LogoImg />
                 <LinkComponent>
                     <ShoppingBag  weight="thin" />
-                    <span>Produtos</span>
+                    <Link to="produtos">Produtos</Link>
                 </LinkComponent>
                 <LinkComponent>
                     <Phone  weight="thin" />
-                    <span>Contato</span>
+                    <Link to="contato">Contato</Link>
                 </LinkComponent>
             </DivLocation>
         </MainNav>
