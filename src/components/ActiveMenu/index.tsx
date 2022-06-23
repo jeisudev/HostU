@@ -1,24 +1,25 @@
 import {ActiveUlMenu, MainDiv} from './styled';
 import {House, MagnifyingGlass, ShoppingBag, Phone} from "phosphor-react";
+import {Link} from "react-router-dom";
 
 export function MenuActive(){
     return(
         <MainDiv>
             <ActiveUlMenu >
                 <House  weight="thin" />
-                <span>Inicio</span>
+                <Link to="/" className='linkActive' >Inicio</Link>
             </ActiveUlMenu>
             <ActiveUlMenu>
                 <MagnifyingGlass  weight="thin" />
-                <span>Sobre</span>
+                <Link to="sobre" className='linkActive' >Sobre</Link>
             </ActiveUlMenu>
             <ActiveUlMenu>
                 <ShoppingBag  weight="thin" />
-                <span>Produtos</span>
+                <Link to="produtos" className='linkActive' >Produtos</Link>
             </ActiveUlMenu>
             <ActiveUlMenu>
                 <Phone  weight="thin" />
-                <span>Contato</span>
+                <Link to="contato" className='linkActive' >Contato</Link>
             </ActiveUlMenu>
         </MainDiv>
     );

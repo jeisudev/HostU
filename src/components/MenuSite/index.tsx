@@ -19,20 +19,20 @@ export function MenuSite(){
                     </DivActive>
                 <LinkComponent >
                     <House  weight="thin" />
-                    <Link to="/">inicio</Link>
+                    <Link to="/" className='linkActive' >inicio</Link>
                 </LinkComponent>
                 <LinkComponent>
                     <MagnifyingGlass  weight="thin" />
-                    <Link to="sobre">Sobre</Link>
+                    <Link to="sobre" className='linkActive' >Sobre</Link>
                 </LinkComponent>
                 <LogoImg />
                 <LinkComponent>
                     <ShoppingBag  weight="thin" />
-                    <Link to="produtos">Produtos</Link>
+                    <Link to="produtos" className='linkActive' >Produtos</Link>
                 </LinkComponent>
                 <LinkComponent>
                     <Phone  weight="thin" />
-                    <Link to="contato">Contato</Link>
+                    <Link to="contato" className='linkActive' >Contato</Link>
                 </LinkComponent>
             </DivLocation>
         </MainNav>

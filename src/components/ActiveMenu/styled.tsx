@@ -18,6 +18,21 @@ gap: 4px;
 }
 svg{
     color: var(--black);
+    &:hover{
+    color: var(--teal);
+    filter: brightness(0.8);
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+}
+.linkActive{
+    color: var(--black);
+    &:hover{
+        color: var(--teal);
+        filter: brightness(0.8);
+        cursor: pointer;
+        font-size: 1.1rem;
+    }
 }
 `;
 

@@ -43,6 +43,14 @@ transition: filter 0.2s;
     color: var(--teal);
     filter: brightness(0.8);
 }
+.linkActive{
+    color: var(--black);
+    &:hover{
+        color: var(--teal);
+        filter: brightness(0.8);
+        cursor: pointer;
+    }
+}
 `;
 export const DivActive = styled.div`
 display: none;
